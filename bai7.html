@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  a= +prompt("nhập vào giá trị a")
+  b= +prompt("nhập vào giá trị b")
+  c= +prompt("nhập vào giá trị c")
+  delta= b*b-4*a*c
+  console.log(delta)
+  if(delta>0) {
+      x1 = (-b + Math.sqrt(delta)) / (2 * a)
+      x2 = (-b - Math.sqrt(delta)) / (2 * a)
+      alert("phương trình có 2 nghiệm x1,x2 là: " + x1 + x2)
+  }else if(delta===0){
+      x=-b/(2*a)
+      alert("phương trình có nghiệm kép: " +x)
+
+  }else{
+      alert("phương trình vô nghiệm:")
+  }
+</script>
+
+</body>
+</html>
